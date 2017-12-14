@@ -1,0 +1,28 @@
+{
+  "name": "allen-nwb-lab",
+  "version": "0.1.0",
+  "description": "A laboratory application to prototype visualization approaches",
+  "main": "index.js",
+  "scripts": {
+    "pythonprep": "${VIRTUALENV-virtualenv} venv && ./venv/bin/pip install tangelo",
+    "build": "webpack",
+    "serve": "./venv/bin/tangelo --root build --port ${PORT-8080}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronichoudhury-work/allen-nwb-lab.git"
+  },
+  "author": "Kitware Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ronichoudhury-work/allen-nwb-lab/issues"
+  },
+  "homepage": "https://github.com/ronichoudhury-work/allen-nwb-lab#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "babel-loader": "^8.0.0-beta.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0"
+  }
+}
